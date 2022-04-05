@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketing", "Ticketing.csproj", "{004D961E-5773-45A4-9474-289FEEE67123}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{004D961E-5773-45A4-9474-289FEEE67123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004D961E-5773-45A4-9474-289FEEE67123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004D961E-5773-45A4-9474-289FEEE67123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004D961E-5773-45A4-9474-289FEEE67123}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07314627-D39A-44CD-93EE-C30BFEAAE5F8}
+	EndGlobalSection
+EndGlobal

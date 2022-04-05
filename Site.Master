@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Ticketing.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Ticketing</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+     <Link rel = "StyleSheet" href = " Styleclient.css" type = "text/css" />
+    <link href="/bootstrap/bootstrap-5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/bootstrap-5.0.2/dist/js/" rel="stylesheet">
+
+
+
+</head>
+<body class="bg-dark " >
+
+    <!-- navbar open -->
+    <div class= "top"  >
+       
+
+       <ul class=" nav  bg-success.bg-gradient nav-pills ">
+
+            <li class="nav-item  active ">
+                 <a      href="#">Active</a>
+                                                                            </li>
+    <li class="">
+                         <a runat="server" href="~/">Accueil</a>
+                                                                         </li>
+      <li class="nav-item">
+                                <a runat="server" href="~/Client">Client</a>
+                                                                                 </li>
+    <li class="nav-item">
+                         <a runat="server" href="~/Contact">Contact</a>
+                                                                                    </li>
+    <li>       <input type="text" class ="search" name="search" placeholder="Search.."> </li> 
+
+                    
+</ul>
+      </div>
+
+    <!-- navbar close -->
+
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        
+        
+    <div class="left">  
+
+         <a  runat="server" href="~/"><img class="logo"  "  src="Images/logo.png"/></a>
+
+
+    
+
+
+
+
+
+
+
+    </div>
+
+
+        <div class="fullscroll">
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <hr />
+
+            <footer>
+                <p>  Blueline-business     &copy; <%: DateTime.Now.Year %> - Ticket</p>
+            </footer>
+        </div>
+
+
+    </form>
+    </div>
+
+</body>
+</html>
